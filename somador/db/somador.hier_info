@@ -1,0 +1,11 @@
+|somador
+a => u0.IN0
+a => u3.IN0
+b => u0.IN1
+b => u3.IN1
+cin => u1.IN1
+cin => u2.IN1
+s <= u1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+

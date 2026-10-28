@@ -1,0 +1,72 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/camis/quartus/somador/simulation/questa
+T_opt
+!i145 1
+!i144 0
+!s110 1793213158
+V2GU_JH<_Inf7kkO[ORV=22
+Z2 04 7 4 work somador fast 0
+=1-6432a8188bca-6ae242e5-12a-92c
+R0
+Z3 !s12f OEM100
+Z4 !s12b OEM100
+Z5 !s124 OEM10U1 
+Z6 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z7 tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+Z8 OL;O;2025.2;82
+R1
+T_opt1
+!i145 1
+!i144 0
+!s110 1793213187
+V<JE`eGN1]5`VCbAfK;l6b1
+R2
+=1-6432a8188bca-6ae24302-363-1e08
+R0
+R3
+R4
+R5
+R6
+o-quiet -auto_acc_if_foreign -work work +acc
+R7
+n@_opt1
+R8
+vsomador
+2C:/camis/quartus/somador/somador.v
+!s110 1793213149
+!i10b 1
+!s100 Q6dY@eVHGB6:G`:0hiMN62
+I9Y`C8UQIL;RigeWKeI?LO1
+R1
+w1793212637
+8C:/camis/quartus/somador/somador.v
+FC:/camis/quartus/somador/somador.v
+!i122 0
+L0 6 16
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1793213149.000000
+!s107 C:/camis/quartus/somador/somador.v|
+!s90 -reportprogress|300|-work|work|+incdir+C:/camis/quartus/somador|C:/camis/quartus/somador/somador.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -work work +incdir+C:/camis/quartus/somador -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0 defaultOptions 1085333592
