@@ -25,44 +25,40 @@
 # Copying c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog  -work work +incdir+C:/camis/quartus/somador {C:/camis/quartus/somador/somador.v}
+# vlog  -work work +incdir+C:/camis/quartus/verilogQuartus/somador {C:/camis/quartus/verilogQuartus/somador/somador.v}
 # Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 15:45:49 on Oct 28,2026
-# vlog -reportprogress 300 -work work "+incdir+C:/camis/quartus/somador" C:/camis/quartus/somador/somador.v 
+# Start time: 16:01:33 on Oct 28,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/camis/quartus/verilogQuartus/somador" C:/camis/quartus/verilogQuartus/somador/somador.v 
 # ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
 # -- Compiling module somador
 # 
 # Top level modules:
 # 	somador
-# End time: 15:45:49 on Oct 28,2026, Elapsed time: 0:00:00
+# End time: 16:01:33 on Oct 28,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.somador
-# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
-# vsim work.somador 
-# Start time: 15:45:56 on Oct 28,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
-# Loading work.somador(fast)
 vsim -voptargs=+acc work.somador
-# End time: 15:46:26 on Oct 28,2026, Elapsed time: 0:00:30
-# Errors: 0, Warnings: 0
 # ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
 # vsim -voptargs="+acc" work.somador 
-# Start time: 15:46:26 on Oct 28,2026
+# Start time: 16:01:44 on Oct 28,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.somador(fast)
-add wave -position insertpoint  \
-sim:/somador/w1
-add wave -position insertpoint  \
-sim:/somador/a
-add wave -position end  sim:/somador/a
-wave create -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/somador/cin
+add wave -position insertpoint sim:/somador/cout
+add wave -position insertpoint sim:/somador/cout
+add wave -position insertpoint sim:/somador/cout
+add wave -position insertpoint sim:/somador/cout
+wave create -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/somador/cin
 # Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-# somador
-# Causality operation skipped due to absence of debug database file
-# End time: 15:50:00 on Oct 28,2026, Elapsed time: 0:03:34
+wave create -driver freeze -pattern clock -initialvalue 0 -period 200ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/somador/b
+wave create -driver freeze -pattern clock -initialvalue 0 -period 400ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/somador/a
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/somador/a
+add wave -position 1 -format Logic -height 17 -editable 2 Edit:/somador/b
+add wave -position end  sim:/somador/cout
+add wave -position end  sim:/somador/s
+run
+run
+# End time: 16:09:55 on Oct 28,2026, Elapsed time: 0:08:11
 # Errors: 0, Warnings: 1

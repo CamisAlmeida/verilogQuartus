@@ -1,0 +1,14 @@
+$comment
+	File created using the following command:
+		vcd file somador4bits.msim.vcd -direction
+$end
+$date
+	Thu Oct 29 16:34:13 2026
+$end
+$version
+	Questa Altera Starter FPGA Edition Version 2025.2
+$end
+$timescale
+	1ps
+$end
+#1000000

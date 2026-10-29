@@ -1,0 +1,78 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/camis/quartus/verilogQuartus/somador4bits/simulation/questa
+T_opt
+!i145 1
+!i144 0
+!s110 1793304076
+V@ji_g7R_i>JZNYC_S?kbo1
+04 12 4 work somador4bits fast 0
+=1-6432a8188bca-6ae3a60b-249-5b8
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U5 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+OL;O;2025.2;82
+vsomador4bits
+2C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v
+Z2 !s110 1793304027
+!i10b 1
+!s100 [Kno=BMnflA1@A8H9CD;71
+I^W2>ofiKa<UATC?jk98oX0
+R1
+w1793303774
+8C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v
+FC:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v
+!i122 1
+L0 9 18
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z5 !s108 1793304027.000000
+!s107 C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v|
+!s90 -reportprogress|300|-work|work|+incdir+C:/camis/quartus/verilogQuartus/somador4bits|C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -work work +incdir+C:/camis/quartus/verilogQuartus/somador4bits -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0 defaultOptions 1085333592
+vsomadorCompleto
+2C:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v
+R2
+!i10b 1
+!s100 MTho7[<@;iRC:l?X5F=9B3
+Ib7ZMcaZ8KcJg;N`f=B`Da3
+R1
+w1793300375
+8C:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v
+FC:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v
+!i122 0
+L0 6 16
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v|
+!s90 -reportprogress|300|-work|work|+incdir+C:/camis/quartus/verilogQuartus/somador4bits|C:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v|
+!i113 0
+R6
+R7
+R8
+nsomador@completo

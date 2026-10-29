@@ -1,0 +1,61 @@
+|somador4bits
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN1
+s[0] <= somadorCompleto:fa0.s
+s[1] <= somadorCompleto:fa1.s
+s[2] <= somadorCompleto:fa2.s
+s[3] <= somadorCompleto:fa3.s
+cout <= somadorCompleto:fa3.cout
+
+
+|somador4bits|somadorCompleto:fa0
+a => u0.IN0
+a => u3.IN0
+b => u0.IN1
+b => u3.IN1
+cin => u1.IN1
+cin => u2.IN1
+s <= u1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4bits|somadorCompleto:fa1
+a => u0.IN0
+a => u3.IN0
+b => u0.IN1
+b => u3.IN1
+cin => u1.IN1
+cin => u2.IN1
+s <= u1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4bits|somadorCompleto:fa2
+a => u0.IN0
+a => u3.IN0
+b => u0.IN1
+b => u3.IN1
+cin => u1.IN1
+cin => u2.IN1
+s <= u1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador4bits|somadorCompleto:fa3
+a => u0.IN0
+a => u3.IN0
+b => u0.IN1
+b => u3.IN1
+cin => u1.IN1
+cin => u2.IN1
+s <= u1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+

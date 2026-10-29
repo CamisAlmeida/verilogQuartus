@@ -1,0 +1,7 @@
+2 16 cyclonev_io_obuf 4 fast 56 c:/altera_lite/25.1std/questa_fse/intel/verilog/cyclonev 0 0 0 0 154 0
+2 16 cyclonev_io_ibuf 4 fast 56 c:/altera_lite/25.1std/questa_fse/intel/verilog/cyclonev 0 0 0 0 97 0
+2 19 cyclonev_lcell_comb 4 fast 56 c:/altera_lite/25.1std/questa_fse/intel/verilog/cyclonev 0 0 131072 0 710 0
+2 19 cyclonev_lcell_comb 7 fast__1 56 c:/altera_lite/25.1std/questa_fse/intel/verilog/cyclonev 0 0 131072 0 710 0
+2 19 cyclonev_lcell_comb 7 fast__2 56 c:/altera_lite/25.1std/questa_fse/intel/verilog/cyclonev 0 0 131072 0 710 0
+2 15 somadorCompleto 4 fast 65 C:/camis/quartus/verilogQuartus/somador4bits/simulation/qsim/work 0 0 573440 0 2917 0
+1 27 somadorCompleto_vlg_vec_tst 4 fast 65 C:/camis/quartus/verilogQuartus/somador4bits/simulation/qsim/work 0 0 573440 0 2979 0

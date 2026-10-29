@@ -1,0 +1,94 @@
+# Reading pref.tcl
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do somador4bits_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Altera Starter FPGA Edition-64 vmap 2025.2 Lib Mapping Utility 2025.05 May 31 2025
+# vmap work rtl_work 
+# ** Note: (vmap-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# Copying c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog  -work work +incdir+C:/camis/quartus/verilogQuartus/somador4bits {C:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 17:00:27 on Oct 29,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/camis/quartus/verilogQuartus/somador4bits" C:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module somadorCompleto
+# 
+# Top level modules:
+# 	somadorCompleto
+# End time: 17:00:27 on Oct 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+C:/camis/quartus/verilogQuartus/somador4bits {C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 17:00:27 on Oct 29,2026
+# vlog -reportprogress 300 -work work "+incdir+C:/camis/quartus/verilogQuartus/somador4bits" C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module somador4bits
+# 
+# Top level modules:
+# 	somador4bits
+# End time: 17:00:27 on Oct 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.somador4bits
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim work.somador4bits 
+# Start time: 17:01:15 on Oct 29,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# Loading work.somador4bits(fast)
+vsim work.somador4bits
+# End time: 17:01:27 on Oct 29,2026, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim work.somador4bits 
+# Start time: 17:01:27 on Oct 29,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.somador4bits(fast)
+vsim work.somador4bits
+# End time: 17:01:30 on Oct 29,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim work.somador4bits 
+# Start time: 17:01:30 on Oct 29,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.somador4bits(fast)
+add wave -position end  sim:/somador4bits/b
+add wave -position end  sim:/somador4bits/cin
+add wave -position end  sim:/somador4bits/s
+add wave -position end  sim:/somador4bits/cout
+add wave -position 0  sim:/somador4bits/a
+force -freeze sim:/somador4bits/a 10 0
+force -freeze sim:/somador4bits/b 2 0
+force -freeze sim:/somador4bits/cin 0 0
+run
+# Causality operation skipped due to absence of debug database file
+force -freeze sim:/somador4bits/a 10 0
+force -freeze sim:/somador4bits/a 10#10 0
+force -freeze sim:/somador4bits/a 10#10 0
+force -freeze sim:/somador4bits/a 10#10 0
+force -freeze sim:/somador4bits/b 10#2 0
+run
+force -freeze sim:/somador4bits/a 10#6 0
+force -freeze sim:/somador4bits/b 10#4 0
+run
+# End time: 17:19:56 on Oct 29,2026, Elapsed time: 0:18:26
+# Errors: 0, Warnings: 0
