@@ -8,11 +8,11 @@ b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
 cin => cin.IN1
-s[0] <= somadorCompleto:fa0.s
-s[1] <= somadorCompleto:fa1.s
-s[2] <= somadorCompleto:fa2.s
-s[3] <= somadorCompleto:fa3.s
-cout <= somadorCompleto:fa3.cout
+s[0] << somadorCompleto:fa0.s
+s[1] << somadorCompleto:fa1.s
+s[2] << somadorCompleto:fa2.s
+s[3] << somadorCompleto:fa3.s
+cout << somadorCompleto:fa3.cout
 
 
 |somador4bits|somadorCompleto:fa0

@@ -5,6 +5,6 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog  -work work +incdir+C:/camis/quartus/verilogQuartus/somador4bits {C:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v}
-vlog  -work work +incdir+C:/camis/quartus/verilogQuartus/somador4bits {C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v}
+vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/somador4bits {/home/camis/Documentos/verilogQuartus/somador4bits/somadorCompleto.v}
+vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/somador4bits {/home/camis/Documentos/verilogQuartus/somador4bits/somador4bits.v}
 

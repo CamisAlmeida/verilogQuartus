@@ -1,0 +1,104 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/camis/Documentos/verilogQuartus/Rd_74HC166/simulation/questa
+T_opt
+!i145 1
+!i144 0
+!s110 1793391614
+VckDVY9G<RQkKKmNLeo:513
+04 10 4 work Rd_74HC166 fast 0
+=1-00e02542315c-6ae4fbfd-e8303-5d59
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U17 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2025.2;82
+ventradaD
+2/home/camis/Documentos/verilogQuartus/Rd_74HC166/entradaD.v
+Z3 !s110 1793391609
+!i10b 1
+!s100 RZdj]nkWWRPCjd]O1Ha2H3
+I[I=>6lN;E;FidK^j;[GC:0
+R1
+w1793387530
+8/home/camis/Documentos/verilogQuartus/Rd_74HC166/entradaD.v
+F/home/camis/Documentos/verilogQuartus/Rd_74HC166/entradaD.v
+!i122 1
+Z4 L0 4 13
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z7 !s108 1793391609.000000
+!s107 /home/camis/Documentos/verilogQuartus/Rd_74HC166/entradaD.v|
+!s90 -reportprogress|300|-work|work|+incdir+/home/camis/Documentos/verilogQuartus/Rd_74HC166|/home/camis/Documentos/verilogQuartus/Rd_74HC166/entradaD.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -work work +incdir+/home/camis/Documentos/verilogQuartus/Rd_74HC166 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+nentrada@d
+vflipFlopD
+2/home/camis/Documentos/verilogQuartus/Rd_74HC166/flipFlopD.v
+R3
+!i10b 1
+!s100 TY4JZl7;3Kh9[f:fXnfEK1
+I4fBjl3JkZ8]D3_89`0Jm41
+R1
+w1793382964
+8/home/camis/Documentos/verilogQuartus/Rd_74HC166/flipFlopD.v
+F/home/camis/Documentos/verilogQuartus/Rd_74HC166/flipFlopD.v
+!i122 0
+R4
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/camis/Documentos/verilogQuartus/Rd_74HC166/flipFlopD.v|
+!s90 -reportprogress|300|-work|work|+incdir+/home/camis/Documentos/verilogQuartus/Rd_74HC166|/home/camis/Documentos/verilogQuartus/Rd_74HC166/flipFlopD.v|
+!i113 0
+R8
+R9
+R2
+nflip@flop@d
+vRd_74HC166
+2/home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v
+R3
+!i10b 1
+!s100 6ZJhh?G<k^VR0hF]Df1HT0
+I9PK7ABm^zYA=07EhHh5WJ1
+R1
+w1793391479
+8/home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v
+F/home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v
+!i122 2
+L0 2 47
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v|
+!s90 -reportprogress|300|-work|work|+incdir+/home/camis/Documentos/verilogQuartus/Rd_74HC166|/home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v|
+!i113 0
+R8
+R9
+R2
+n@rd_74@h@c166

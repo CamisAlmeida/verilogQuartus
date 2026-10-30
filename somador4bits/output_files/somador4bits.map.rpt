@@ -1,5 +1,5 @@
 Analysis & Synthesis report for somador4bits
-Thu Oct 29 16:56:24 2026
+Fri Oct 30 14:16:30 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 29 16:56:24 2026           ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 30 14:16:30 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; somador4bits                                    ;
 ; Top-level Entity Name           ; somador4bits                                    ;
@@ -166,14 +166,14 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                 ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                   ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
-; somadorCompleto.v                ; yes             ; User Verilog HDL File  ; C:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v ;         ;
-; somador4bits.v                   ; yes             ; User Verilog HDL File  ; C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v    ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
+; somadorCompleto.v                ; yes             ; User Verilog HDL File  ; /home/camis/Documentos/verilogQuartus/somador4bits/somadorCompleto.v ;         ;
+; somador4bits.v                   ; yes             ; User Verilog HDL File  ; /home/camis/Documentos/verilogQuartus/somador4bits/somador4bits.v    ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------+
@@ -263,16 +263,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Thu Oct 29 16:56:15 2026
+    Info: Processing started: Fri Oct 30 14:16:23 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off somador4bits -c somador4bits
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file somadorcompleto.v
-    Info (12023): Found entity 1: somadorCompleto File: C:/camis/quartus/verilogQuartus/somador4bits/somadorCompleto.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file somadorCompleto.v
+    Info (12023): Found entity 1: somadorCompleto File: /home/camis/Documentos/verilogQuartus/somador4bits/somadorCompleto.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file somador4bits.v
-    Info (12023): Found entity 1: somador4bits File: C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v Line: 9
+    Info (12023): Found entity 1: somador4bits File: /home/camis/Documentos/verilogQuartus/somador4bits/somador4bits.v Line: 9
 Info (12127): Elaborating entity "somador4bits" for the top level hierarchy
-Info (12128): Elaborating entity "somadorCompleto" for hierarchy "somadorCompleto:fa0" File: C:/camis/quartus/verilogQuartus/somador4bits/somador4bits.v Line: 20
+Info (12128): Elaborating entity "somadorCompleto" for hierarchy "somadorCompleto:fa0" File: /home/camis/Documentos/verilogQuartus/somador4bits/somador4bits.v Line: 20
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -281,9 +281,9 @@ Info (21057): Implemented 20 device resources after synthesis - the final resour
     Info (21059): Implemented 5 output pins
     Info (21061): Implemented 6 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Thu Oct 29 16:56:24 2026
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 465 megabytes
+    Info: Processing ended: Fri Oct 30 14:16:30 2026
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:13
 
 

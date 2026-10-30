@@ -1,0 +1,45 @@
+|Rd_74HC166
+clk => shift_reg[0].CLK
+clk => shift_reg[1].CLK
+clk => shift_reg[2].CLK
+clk => shift_reg[3].CLK
+clk => shift_reg[4].CLK
+clk => shift_reg[5].CLK
+clk => shift_reg[6].CLK
+clk => shift_reg[7].CLK
+clr_n => shift_reg[0].ACLR
+clr_n => shift_reg[1].ACLR
+clr_n => shift_reg[2].ACLR
+clr_n => shift_reg[3].ACLR
+clr_n => shift_reg[4].ACLR
+clr_n => shift_reg[5].ACLR
+clr_n => shift_reg[6].ACLR
+clr_n => shift_reg[7].ACLR
+clk_inh => shift_reg[0].ENA
+clk_inh => shift_reg[7].ENA
+clk_inh => shift_reg[6].ENA
+clk_inh => shift_reg[5].ENA
+clk_inh => shift_reg[4].ENA
+clk_inh => shift_reg[3].ENA
+clk_inh => shift_reg[2].ENA
+clk_inh => shift_reg[1].ENA
+shift_load_n => shift_reg.OUTPUTSELECT
+shift_load_n => shift_reg.OUTPUTSELECT
+shift_load_n => shift_reg.OUTPUTSELECT
+shift_load_n => shift_reg.OUTPUTSELECT
+shift_load_n => shift_reg.OUTPUTSELECT
+shift_load_n => shift_reg.OUTPUTSELECT
+shift_load_n => shift_reg.OUTPUTSELECT
+shift_load_n => shift_reg.OUTPUTSELECT
+parallel_in[0] => shift_reg.DATAB
+parallel_in[1] => shift_reg.DATAB
+parallel_in[2] => shift_reg.DATAB
+parallel_in[3] => shift_reg.DATAB
+parallel_in[4] => shift_reg.DATAB
+parallel_in[5] => shift_reg.DATAB
+parallel_in[6] => shift_reg.DATAB
+parallel_in[7] => shift_reg.DATAB
+serial_in => shift_reg.DATAA
+serial_out <= shift_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

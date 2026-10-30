@@ -1,0 +1,51 @@
+// Registrador de deslocamento 74HC166
+
+modulo rd_74HC166(clk, clr_n, clk_inh, shift_load_n, parallel_in, serial_in, serial_out);
+
+	input clk, clr_n, clk_inh, shift_load_n, serial_in;
+	// Dados paralelos: A corresponde ao bit 0 e H ao bit 7
+	input [7:0] parallel_in;
+	output serial_out;
+	
+	// variaveis auxiliares 
+	wire o0,o1,o2,o3,o4,o5,o6,o7;
+	wire q0,q1,q2,q3,q4,q5,q6,q7; 
+	
+	wire c;
+	
+	
+	always @ (posedge clk, negedge clr_n) begin
+	
+	 or (c,clk,clk_inh);
+	
+		if (clr_n == 0) begin 
+			parallel_in = 0;
+		end
+		
+		// Entrada A
+		entradaD d0 (.a(serial_in),.b(shift_load_n),.c(~shift_load_n),.d(parallel_in[0]),.out(o0));
+		flipFlopD f0 (.Q(q0), .D(o0), .clk(c), .reset(~clr_n));
+		// Entrada B
+		entradaD d1 (.a(q0),.b(shift_load_n),.c(~shift_load_n),.d(parallel_in[1]),.out(o1));
+		flipFlopD f1 (.Q(q1), .D(o1), .clk(c), .reset(~clr_n));
+		// Entrada C
+		entradaD d2 (.a(q1),.b(shift_load_n),.c(~shift_load_n),.d(parallel_in[2]),.out(o2));
+		flipFlopD f2 (.Q(q2), .D(o2), .clk(c), .reset(~clr_n));
+		// Entrada D
+		entradaD d3 (.a(q2),.b(shift_load_n),.c(~shift_load_n),.d(parallel_in[3]),.out(o3));
+		flipFlopD f3 (.Q(q3), .D(o3), .clk(c), .reset(~clr_n));
+		// Entrada E
+		entradaD d4 (.a(q3),.b(shift_load_n),.c(~shift_load_n),.d(parallel_in[4]),.out(o4));
+		flipFlopD f4 (.Q(q4), .D(o4), .clk(c), .reset(~clr_n));
+		// Entrada F
+		entradaD d5 (.a(q4),.b(shift_load_n),.c(~shift_load_n),.d(parallel_in[5]),.out(o5));
+		flipFlopD f5 (.Q(q5), .D(o5), .clk(c), .reset(~clr_n));
+		// Entrada G
+		entradaD d6 (.a(q5),.b(shift_load_n),.c(~shift_load_n),.d(parallel_in[6]),.out(o6));
+		flipFlopD f6 (.Q(q6), .D(o6), .clk(c), .reset(~clr_n));
+		// Entrada G
+		entradaD d7 (.a(q6),.b(shift_load_n),.c(~shift_load_n),.d(parallel_in[7]),.out(o7));
+		flipFlopD f7 (.Q(serial_out), .D(o7), .clk(c), .reset(~clr_n));
+	end
+	
+endmodule

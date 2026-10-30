@@ -1,0 +1,16 @@
+// Parte do or com dois ands como entrada que se repete varias vezes
+
+
+module comparador(a,b,c,d,out);
+
+	input wire a,b,c,d;
+	output wire out;
+	
+	wire and1, and2, out;
+	
+	and a1 (and1, a, b);
+	and a2 (and2, c, d);
+	or o1 (and1, and2);
+	
+
+endmodule
