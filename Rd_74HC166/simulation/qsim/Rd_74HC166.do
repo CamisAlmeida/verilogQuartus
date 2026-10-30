@@ -1,7 +1,7 @@
 onerror {exit -code 1}
 vlib work
 vlog -work work Rd_74HC166.vo
-vlog -work work wave.vwf.vt
+vlog -work work Rd_74HC166.vwf.vt
 vsim -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Rd_74HC166_vlg_vec_tst
 vcd file -direction Rd_74HC166.msim.vcd
 vcd add -internal Rd_74HC166_vlg_vec_tst/*

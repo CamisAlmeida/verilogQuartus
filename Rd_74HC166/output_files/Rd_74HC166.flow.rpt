@@ -1,5 +1,5 @@
 Flow report for Rd_74HC166
-Fri Oct 30 18:40:13 2026
+Fri Oct 30 18:48:28 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Fri Oct 30 18:40:13 2026           ;
+; Flow Status                     ; Successful - Fri Oct 30 18:48:28 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; Rd_74HC166                                      ;
 ; Top-level Entity Name           ; Rd_74HC166                                      ;
@@ -126,7 +126,9 @@ on the Quartus Prime software download page.
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 675 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 675 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 675 MB              ; 00:00:01                           ;
-; Total                ; 00:00:49     ; --                      ; --                  ; 00:01:23                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 675 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 675 MB              ; 00:00:01                           ;
+; Total                ; 00:00:51     ; --                      ; --                  ; 00:01:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -139,6 +141,8 @@ on the Quartus Prime software download page.
 ; Fitter               ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
 ; Assembler            ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
 ; Timing Analyzer      ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
+; EDA Netlist Writer   ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
+; EDA Netlist Writer   ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
 ; EDA Netlist Writer   ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
 ; EDA Netlist Writer   ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
 ; EDA Netlist Writer   ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
@@ -190,6 +194,8 @@ quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Rd_74HC166 -c Rd_74HC166 --vector_source=/home/camis/Documentos/verilogQuartus/Rd_74HC166/wave.vwf --testbench_file=/home/camis/Documentos/verilogQuartus/Rd_74HC166/simulation/qsim/wave.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/camis/Documentos/verilogQuartus/Rd_74HC166/simulation/qsim/ Rd_74HC166 -c Rd_74HC166
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Rd_74HC166 -c Rd_74HC166 --vector_source=/home/camis/Documentos/verilogQuartus/Rd_74HC166/wave.vwf --testbench_file=/home/camis/Documentos/verilogQuartus/Rd_74HC166/simulation/qsim/wave.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/camis/Documentos/verilogQuartus/Rd_74HC166/simulation/qsim/ Rd_74HC166 -c Rd_74HC166
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Rd_74HC166 -c Rd_74HC166 --vector_source=/home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.vwf --testbench_file=/home/camis/Documentos/verilogQuartus/Rd_74HC166/simulation/qsim/Rd_74HC166.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/camis/Documentos/verilogQuartus/Rd_74HC166/simulation/qsim/ Rd_74HC166 -c Rd_74HC166
 
 
