@@ -1,8 +1,16 @@
 m255
 K4
 z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
 !s12c _opt
-Z0 !s99 nomlopt
+R1
 !s11f vlog 2025.2 2025.05, May 31 2025
 13
 !s112 1.1
@@ -10,7 +18,7 @@ Z0 !s99 nomlopt
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 d/home/camis/Documentos/verilogQuartus/Rd_74HC166/simulation/questa
+Z2 d/home/camis/Documentos/verilogQuartus/Rd_74HC166/simulation/questa
 T_opt
 !i145 1
 !i144 0
@@ -18,37 +26,79 @@ T_opt
 VnKM>OAObFC7z@`300KRL73
 04 10 4 work Rd_74HC166 fast 0
 =1-00e02542315c-6ae5181b-7fc3e-a70b
-R0
-!s12f OEM100
-!s12b OEM100
+R1
+Z3 !s12f OEM100
+Z4 !s12b OEM100
 !s124 OEM10U1 
-!s135 nogc
+Z5 !s135 nogc
 o-quiet -auto_acc_if_foreign -work work
-Z2 tCvgOpt 0
+tCvgOpt 0
 n@_opt
-OL;O;2025.2;82
+Z6 OL;O;2025.2;82
+R2
+T_opt1
+!i145 1
+!i144 0
+!s110 1793739051
+V?Q?V_B]beJcC78AkC;8iB3
+04 13 4 work tb_Rd_74HC166 fast 0
+=1-6432a8188bca-6aea492b-d4-1d28
+R1
+R3
+R4
+!s124 OEM10U2 
+R5
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+tCvgOpt 0 defaultOptions 1107585188
+n@_opt1
+R6
 vRd_74HC166
-2/home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v
-!s110 1793398806
+2C:/camis/quartus/verilogQuartus/Rd_74HC166/Rd_74HC166.v
+Z7 !s110 1793739050
 !i10b 1
 !s100 Wl893f2:5j2A25Qzk6Q0Y3
-IHGeYb9``=2`hhm[?L<e2B0
-R1
-w1793396534
-8/home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v
-F/home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v
+IhC_XE6EPcE6C>hnb8W[SD3
+Z8 dC:/camis/quartus/verilogQuartus/Rd_74HC166/simulation/questa
+w1793724662
+8C:/camis/quartus/verilogQuartus/Rd_74HC166/Rd_74HC166.v
+FC:/camis/quartus/verilogQuartus/Rd_74HC166/Rd_74HC166.v
 !i122 0
 L0 56 22
-VDg1SIo80bB@j0V0VzS_@n1
-OL;L;2025.2;82
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2025.2;82
 r1
 !s85 0
 31
-!s108 1793398806.000000
-!s107 /home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v|
-!s90 -reportprogress|300|-work|work|+incdir+/home/camis/Documentos/verilogQuartus/Rd_74HC166|/home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v|
+!s108 1793739049.000000
+!s107 C:/camis/quartus/verilogQuartus/Rd_74HC166/Rd_74HC166.v|
+!s90 -reportprogress|300|-work|work|+incdir+C:/camis/quartus/verilogQuartus/Rd_74HC166|C:/camis/quartus/verilogQuartus/Rd_74HC166/Rd_74HC166.v|
 !i113 0
-o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-!s92 -work work +incdir+/home/camis/Documentos/verilogQuartus/Rd_74HC166 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
+Z11 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 !s92 -work work +incdir+C:/camis/quartus/verilogQuartus/Rd_74HC166 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 tCvgOpt 0 defaultOptions 1085333592
 n@rd_74@h@c166
+vtb_Rd_74HC166
+2C:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v
+R7
+!i10b 1
+!s100 U465N0O<3ePhP2c;J_on43
+IbT52=U:G;A[mOI0Z9n=N70
+R8
+w1793738761
+8C:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v
+FC:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v
+!i122 1
+L0 3 187
+R9
+R10
+r1
+!s85 0
+31
+!s108 1793739050.000000
+!s107 C:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v|
+!s90 -reportprogress|300|-work|work|+incdir+C:/camis/quartus/verilogQuartus/Rd_74HC166|C:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v|
+!i113 0
+R11
+R12
+R13
+ntb_@rd_74@h@c166

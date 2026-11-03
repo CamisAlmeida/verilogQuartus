@@ -40,6 +40,6 @@ parallel_in[5] => shift_reg.DATAB
 parallel_in[6] => shift_reg.DATAB
 parallel_in[7] => shift_reg.DATAB
 serial_in => shift_reg.DATAA
-serial_out <= shift_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+serial_out << shift_reg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Rd_74HC166
-Fri Oct 30 18:20:56 2026
+Tue Nov  3 18:00:04 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 30 18:20:56 2026           ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov  3 18:00:04 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; Rd_74HC166                                      ;
 ; Top-level Entity Name           ; Rd_74HC166                                      ;
@@ -166,13 +166,13 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
-; Rd_74HC166.v                     ; yes             ; User Verilog HDL File  ; /home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                            ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+; Rd_74HC166.v                     ; yes             ; User Verilog HDL File  ; C:/camis/quartus/verilogQuartus/Rd_74HC166/Rd_74HC166.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -256,16 +256,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Fri Oct 30 18:20:50 2026
+    Info: Processing started: Tue Nov  3 17:59:54 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Rd_74HC166 -c Rd_74HC166
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file flipFlopD.v
-    Info (12023): Found entity 1: flipFlopD File: /home/camis/Documentos/verilogQuartus/Rd_74HC166/flipFlopD.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file entradaD.v
-    Info (12023): Found entity 1: entradaD File: /home/camis/Documentos/verilogQuartus/Rd_74HC166/entradaD.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file Rd_74HC166.v
-    Info (12023): Found entity 1: Rd_74HC166 File: /home/camis/Documentos/verilogQuartus/Rd_74HC166/Rd_74HC166.v Line: 56
+Info (12021): Found 1 design units, including 1 entities, in source file flipflopd.v
+    Info (12023): Found entity 1: flipFlopD File: C:/camis/quartus/verilogQuartus/Rd_74HC166/flipFlopD.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file entradad.v
+    Info (12023): Found entity 1: entradaD File: C:/camis/quartus/verilogQuartus/Rd_74HC166/entradaD.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file rd_74hc166.v
+    Info (12023): Found entity 1: Rd_74HC166 File: C:/camis/quartus/verilogQuartus/Rd_74HC166/Rd_74HC166.v Line: 56
+Warning (10335): Unrecognized synthesis attribute "clk_inh" at Tb _rd_74hc166.v(100) File: C:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v Line: 100
+Warning (10335): Unrecognized synthesis attribute "somente" at Tb _rd_74hc166.v(100) File: C:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v Line: 100
+Warning (10335): Unrecognized synthesis attribute "com" at Tb _rd_74hc166.v(100) File: C:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v Line: 100
+Warning (10335): Unrecognized synthesis attribute "clk" at Tb _rd_74hc166.v(100) File: C:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v Line: 100
+Info (12021): Found 1 design units, including 1 entities, in source file tb _rd_74hc166.v
+    Info (12023): Found entity 1: tb_Rd_74HC166 File: C:/camis/quartus/verilogQuartus/Rd_74HC166/Tb _rd_74hc166.v Line: 3
 Info (12127): Elaborating entity "Rd_74HC166" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -273,10 +279,10 @@ Info (21057): Implemented 22 device resources after synthesis - the final resour
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 435 megabytes
-    Info: Processing ended: Fri Oct 30 18:20:56 2026
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:13
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Tue Nov  3 18:00:04 2026
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 
