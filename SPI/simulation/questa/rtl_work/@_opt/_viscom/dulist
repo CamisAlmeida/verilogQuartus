@@ -1,0 +1,6 @@
+1 5 piso8 4 fast 68 /home/camis/Documentos/verilogQuartus/SPI/simulation/questa/rtl_work 0 0 0 0 43 0
+1 5 sipo8 4 fast 68 /home/camis/Documentos/verilogQuartus/SPI/simulation/questa/rtl_work 0 0 0 0 55 0
+1 14 spi_controller 4 fast 68 /home/camis/Documentos/verilogQuartus/SPI/simulation/questa/rtl_work 0 0 0 0 205 0
+1 14 spi_peripheral 4 fast 68 /home/camis/Documentos/verilogQuartus/SPI/simulation/questa/rtl_work 0 0 0 0 109 0
+1 10 spi_system 4 fast 68 /home/camis/Documentos/verilogQuartus/SPI/simulation/questa/rtl_work 0 0 131072 0 92 0
+1 13 tb_spi_system 4 fast 68 /home/camis/Documentos/verilogQuartus/SPI/simulation/questa/rtl_work 0 0 180224 0 911 0

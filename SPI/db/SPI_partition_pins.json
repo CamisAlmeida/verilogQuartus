@@ -4,39 +4,123 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "parallel_out[0]",
+					"name" : "busy",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_out[1]",
+					"name" : "done",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_out[2]",
+					"name" : "ctrl_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_out[3]",
+					"name" : "ctrl_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_out[4]",
+					"name" : "ctrl_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_out[5]",
+					"name" : "ctrl_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_out[6]",
+					"name" : "ctrl_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_out[7]",
+					"name" : "ctrl_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "rx_valid",
+					"name" : "ctrl_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrl_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_rx_valid",
+					"strict" : false
+				},
+				{
+					"name" : "p1_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_rx_valid",
+					"strict" : false
+				},
+				{
+					"name" : "sclk",
+					"strict" : false
+				},
+				{
+					"name" : "copi",
 					"strict" : false
 				},
 				{
@@ -44,7 +128,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "copi",
+					"name" : "cs_n[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cs_n[1]",
+					"strict" : false
+				},
+				{
+					"name" : "start",
 					"strict" : false
 				},
 				{
@@ -56,47 +148,115 @@
 					"strict" : false
 				},
 				{
-					"name" : "cs_n",
+					"name" : "ctrl_in[7]",
 					"strict" : false
 				},
 				{
-					"name" : "sclk",
+					"name" : "ctrl_load",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_load",
+					"name" : "peripheral_sel",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_in[7]",
+					"name" : "p1_in[7]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_in[6]",
+					"name" : "p1_load",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_in[5]",
+					"name" : "p0_in[7]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_in[4]",
+					"name" : "p0_load",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_in[3]",
+					"name" : "ctrl_in[6]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_in[2]",
+					"name" : "p1_in[6]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_in[1]",
+					"name" : "p0_in[6]",
 					"strict" : false
 				},
 				{
-					"name" : "parallel_in[0]",
+					"name" : "ctrl_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrl_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrl_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrl_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrl_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ctrl_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "p1_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "p0_in[0]",
 					"strict" : false
 				}
 			]

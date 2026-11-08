@@ -1,0 +1,19 @@
+module spi_controller #(
+parameter integer DIV = 10
+)(
+input wire clk,
+input wire clr_n,
+input wire parallel_load,
+input wire [7:0] parallel_in,
+output wire [7:0] parallel_out,
+input wire start,
+input wire peripheral_sel,
+output wire sclk,
+output wire copi,
+input wire cipo,
+output wire [1:0] cs_n,
+output wire busy,
+output wire done
+);
+
+endmodule

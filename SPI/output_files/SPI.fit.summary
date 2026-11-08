@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sun Nov  8 15:56:48 2026
+Fitter Status : Successful - Sun Nov  8 19:04:08 2026
 Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 Revision Name : SPI
-Top-level Entity Name : spi_peripheral
+Top-level Entity Name : spi_system
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 14 / 56,480 ( < 1 % )
-Total registers : 28
-Total pins : 24 / 268 ( 9 % )
+Logic utilization (in ALMs) : 66 / 56,480 ( < 1 % )
+Total registers : 136
+Total pins : 64 / 268 ( 24 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )

@@ -26,67 +26,234 @@
 # 
 # vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/piso8.v}
 # Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 15:57:28 on Nov 08,2026
+# Start time: 19:05:02 on Nov 08,2026
 # vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/piso8.v 
 # ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
 # -- Compiling module piso8
 # 
 # Top level modules:
 # 	piso8
-# End time: 15:57:28 on Nov 08,2026, Elapsed time: 0:00:00
+# End time: 19:05:02 on Nov 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/sipo8.v}
 # Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 15:57:28 on Nov 08,2026
+# Start time: 19:05:02 on Nov 08,2026
 # vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/sipo8.v 
 # ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
 # -- Compiling module sipo8
 # 
 # Top level modules:
 # 	sipo8
-# End time: 15:57:28 on Nov 08,2026, Elapsed time: 0:00:00
+# End time: 19:05:02 on Nov 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/spi_peripheral.v}
 # Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 15:57:28 on Nov 08,2026
+# Start time: 19:05:02 on Nov 08,2026
 # vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/spi_peripheral.v 
 # ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
 # -- Compiling module spi_peripheral
 # 
 # Top level modules:
 # 	spi_peripheral
-# End time: 15:57:28 on Nov 08,2026, Elapsed time: 0:00:00
+# End time: 19:05:02 on Nov 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v}
+# vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/spi_controller.v}
 # Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 15:57:28 on Nov 08,2026
-# vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v 
+# Start time: 19:05:02 on Nov 08,2026
+# vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/spi_controller.v 
 # ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
-# -- Compiling module tb_spi_peripheral
+# -- Compiling module spi_controller
 # 
 # Top level modules:
-# 	tb_spi_peripheral
-# End time: 15:57:28 on Nov 08,2026, Elapsed time: 0:00:00
+# 	spi_controller
+# End time: 19:05:02 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/spi_system.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 19:05:02 on Nov 08,2026
+# vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/spi_system.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module spi_system
+# 
+# Top level modules:
+# 	spi_system
+# End time: 19:05:02 on Nov 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_spi_peripheral
+# vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/tb_spi_system.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 19:05:02 on Nov 08,2026
+# vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/tb_spi_system.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module tb_spi_system
+# 
+# Top level modules:
+# 	tb_spi_system
+# End time: 19:05:02 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_spi_system
 # ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_spi_peripheral 
-# Start time: 15:57:28 on Nov 08,2026
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_spi_system 
+# Start time: 19:05:02 on Nov 08,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
-# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'rst_n' not found in module 'spi_peripheral' (2nd connection).
-# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'mosi' not found in module 'spi_peripheral' (5th connection).
-# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'miso' not found in module 'spi_peripheral' (6th connection).
-# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'data_out' not found in module 'spi_peripheral' (7th connection).
-# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'data_in' not found in module 'spi_peripheral' (8th connection).
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=5, Warnings=1.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./SPI_run_msim_rtl_verilog.do PAUSED at line 14
-# End time: 15:58:06 on Nov 08,2026, Elapsed time: 0:00:38
-# Errors: 5, Warnings: 1
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_controller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_spi_system(fast)
+# Loading work.spi_system(fast)
+# Loading work.spi_controller(fast)
+# Loading work.piso8(fast)
+# Loading work.sipo8(fast)
+# Loading work.spi_peripheral(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# === TB SPI System ===
+# 
+# [TESTE A] Sistema ocioso
+#        [PASS] sclk (0) = 00
+#        [PASS] cs_n (11) = 03
+#        [PASS] busy (0) = 00
+#        [PASS] pulsos SCLK = 0
+# 
+# [EXP 1] sel = 0: ctrl A5, p0 3C, p1 A7
+#        [PASS] pulsos SCLK subida = 8
+#        [PASS] pulsos SCLK descida = 8
+#        [PASS] ativacoes cs_n[0] = 1
+#        [PASS] ativacoes cs_n[1] = 0
+#        [PASS] pulsos done = 1
+#        [PASS] pulsos rx_valid p0 = 1
+#        [PASS] pulsos rx_valid p1 = 0
+#        [PASS] mudanca antes do 8o = 0
+#        [PASS] copi (enviado) = a5
+#        [PASS] cs_n final (11) = 03
+#        [PASS] sclk final (0) = 00
+#        [PASS] busy final (0) = 00
+#        [PASS] cipo (visto) = 3c
+#        [PASS] ctrl parallel_out = 3c
+#        [PASS] p0 parallel_out = a5
+#        [PASS] p1 parallel_out = 00
+# 
+# [EXP 2] sel = 1: ctrl 5A, p1 ja tem A7
+#        [PASS] pulsos SCLK subida = 8
+#        [PASS] pulsos SCLK descida = 8
+#        [PASS] ativacoes cs_n[0] = 0
+#        [PASS] ativacoes cs_n[1] = 1
+#        [PASS] pulsos done = 1
+#        [PASS] pulsos rx_valid p0 = 0
+#        [PASS] pulsos rx_valid p1 = 1
+#        [PASS] mudanca antes do 8o = 0
+#        [PASS] copi (enviado) = 5a
+#        [PASS] cs_n final (11) = 03
+#        [PASS] sclk final (0) = 00
+#        [PASS] busy final (0) = 00
+#        [PASS] cipo (visto) = a7
+#        [PASS] ctrl parallel_out = a7
+#        [PASS] p0 parallel_out = a5
+#        [PASS] p1 parallel_out = 5a
+# 
+# [EXP 3a] sel = 0: ctrl F0, p0 96
+#        [PASS] pulsos SCLK subida = 8
+#        [PASS] pulsos SCLK descida = 8
+#        [PASS] ativacoes cs_n[0] = 1
+#        [PASS] ativacoes cs_n[1] = 0
+#        [PASS] pulsos done = 1
+#        [PASS] pulsos rx_valid p0 = 1
+#        [PASS] pulsos rx_valid p1 = 0
+#        [PASS] mudanca antes do 8o = 0
+#        [PASS] copi (enviado) = f0
+#        [PASS] cs_n final (11) = 03
+#        [PASS] sclk final (0) = 00
+#        [PASS] busy final (0) = 00
+#        [PASS] ctrl parallel_out = 96
+#        [PASS] p0 parallel_out = f0
+#        [PASS] p1 parallel_out = 5a
+# 
+# [EXP 3b] sel = 1: ctrl 0F, p1 00
+#        [PASS] pulsos SCLK subida = 8
+#        [PASS] pulsos SCLK descida = 8
+#        [PASS] ativacoes cs_n[0] = 0
+#        [PASS] ativacoes cs_n[1] = 1
+#        [PASS] pulsos done = 1
+#        [PASS] pulsos rx_valid p0 = 0
+#        [PASS] pulsos rx_valid p1 = 1
+#        [PASS] mudanca antes do 8o = 0
+#        [PASS] copi (enviado) = 0f
+#        [PASS] cs_n final (11) = 03
+#        [PASS] sclk final (0) = 00
+#        [PASS] busy final (0) = 00
+#        [PASS] ctrl parallel_out = 00
+#        [PASS] p0 parallel_out = f0
+#        [PASS] p1 parallel_out = 0f
+# 
+# [TESTE B] start repetido com busy = 1
+#        [PASS] pulsos SCLK subida = 8
+#        [PASS] pulsos SCLK descida = 8
+#        [PASS] ativacoes cs_n[0] = 1
+#        [PASS] ativacoes cs_n[1] = 0
+#        [PASS] pulsos done = 1
+#        [PASS] pulsos rx_valid p0 = 1
+#        [PASS] pulsos rx_valid p1 = 0
+#        [PASS] mudanca antes do 8o = 0
+#        [PASS] copi (enviado) = c3
+#        [PASS] cs_n final (11) = 03
+#        [PASS] sclk final (0) = 00
+#        [PASS] busy final (0) = 00
+#        [PASS] ctrl parallel_out = 7e
+#        [PASS] p0 parallel_out = c3
+#        [PASS] done total (5) = 5
+# 
+# [TESTE C] sel muda no meio (comecou em 1)
+#        [PASS] pulsos SCLK subida = 8
+#        [PASS] pulsos SCLK descida = 8
+#        [PASS] ativacoes cs_n[0] = 0
+#        [PASS] ativacoes cs_n[1] = 1
+#        [PASS] pulsos done = 1
+#        [PASS] pulsos rx_valid p0 = 0
+#        [PASS] pulsos rx_valid p1 = 1
+#        [PASS] mudanca antes do 8o = 0
+#        [PASS] copi (enviado) = 81
+#        [PASS] cs_n final (11) = 03
+#        [PASS] sclk final (0) = 00
+#        [PASS] busy final (0) = 00
+#        [PASS] ctrl parallel_out = e7
+#        [PASS] p1 parallel_out = 81
+#        [PASS] p0 parallel_out = c3
+# 
+# [GERAL]
+#        [PASS] cs_n = 00 (vezes) = 0
+# 
+# === Fim: 0 erro(s) ===
+# ** Note: $stop    : /home/camis/Documentos/verilogQuartus/SPI/tb_spi_system.v(215)
+#    Time: 5540 ns  Iteration: 1  Instance: /tb_spi_system
+# Break in Module tb_spi_system at /home/camis/Documentos/verilogQuartus/SPI/tb_spi_system.v line 215
+# 
+# stdin: <EOF>
+delete wave *
+add wave -divider "Controle"
+add wave -label clk            /tb_spi_system/clk
+add wave -label start          /tb_spi_system/start
+add wave -label peripheral_sel /tb_spi_system/sel
+add wave -label busy           /tb_spi_system/busy
+add wave -label done           /tb_spi_system/done
+
+add wave -divider "SPI"
+add wave -label sclk           /tb_spi_system/sclk
+add wave -label cs_n           -radix binary /tb_spi_system/cs_n
+add wave -label copi           /tb_spi_system/copi
+add wave -label cipo           /tb_spi_system/cipo
+
+add wave -divider "Saidas paralelas"
+add wave -label ctrl_out       -radix hexadecimal /tb_spi_system/c_out
+add wave -label p0_out         -radix hexadecimal /tb_spi_system/p0_out
+add wave -label p1_out         -radix hexadecimal /tb_spi_system/p1_out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/camis/Documentos/verilogQuartus/SPI/simulation/questa/wave_tb_spi_system.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/camis/Documentos/verilogQuartus/SPI/simulation/questa/wave_tb_spi_system.do
+# End time: 19:40:55 on Nov 08,2026, Elapsed time: 0:35:53
+# Errors: 0, Warnings: 1

@@ -1,6 +1,8 @@
 m255
 K4
 z2
+!s12c _opt
+Z0 !s99 nomlopt
 !s11f vlog 2025.2 2025.05, May 31 2025
 13
 !s112 1.1
@@ -8,50 +10,158 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/camis/Documentos/verilogQuartus/SPI
+Z1 d/home/camis/Documentos/verilogQuartus/SPI
+T_opt
+!i145 1
+!i144 0
+Z2 !s110 1794174045
+V8ZU5ddDIdn5m9aAzC10RP3
+04 17 4 work tb_spi_controller fast 0
+=1-00e02542315c-6af0ec5d-53a66-7834
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U7 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2025.2;82
 vpiso8
-Z1 2piso8.v|tb_piso8.v
-Z2 !s110 1794149046
+Z4 2piso8.v|sipo8.v|spi_peripheral.v|spi_controller.v|tb_spi_controller.v
+R2
 !i10b 1
 !s100 YDnPMDzT8m;1KP<<HD8kN1
 IBJnCWBk6zcj2m^NWRYhz21
-R0
+R1
 w1793910345
 8piso8.v
 Fpiso8.v
-!i122 1
+!i122 2
 L0 1 24
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 OL;L;2025.2;82
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2025.2;82
 r1
 !s85 0
 31
-Z5 !s108 1794149046.000000
-!s107 tb_piso8.v|piso8.v|
-Z6 !s90 -reportprogress|300|piso8.v|tb_piso8.v|
+Z7 !s108 1794174045.000000
+Z8 !s107 tb_spi_controller.v|spi_controller.v|spi_peripheral.v|sipo8.v|piso8.v|
+Z9 !s90 -reportprogress|300|piso8.v|sipo8.v|spi_peripheral.v|spi_controller.v|tb_spi_controller.v|
 !i113 0
-Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z8 tCvgOpt 0
-vtb_piso8
-R1
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vsipo8
+R4
 R2
+!i10b 1
+!s100 2O573G@Xd?=eNfE]1K>MB1
+Ie8Dk]G>QRikD]<AU>z0WB3
+R1
+w1794159486
+8sipo8.v
+Fsipo8.v
+!i122 2
+L0 1 32
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R3
+vspi_controller
+R4
+R2
+!i10b 1
+!s100 Qm15mcR;^7DU8YhImgJXU1
+IjSEgDZGb8OgDAHgR>Q27j2
+R1
+w1794173540
+8spi_controller.v
+Fspi_controller.v
+!i122 2
+L0 1 117
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R3
+vspi_peripheral
+R4
+R2
+!i10b 1
+!s100 m36N6jOgkge?idP>ZPR5g3
+IaOAzY?o^Pzi4VTf77^I<>2
+R1
+w1794164690
+8spi_peripheral.v
+Fspi_peripheral.v
+!i122 2
+L0 1 60
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R3
+vtb_piso8
+2piso8.v|tb_piso8.v
+!s110 1794149046
 !i10b 1
 !s100 a^LAG0]1]K3Oz_o53ziLW3
 Ig=MdW5:LkW`ESL^3QL4<G1
-R0
+R1
 w1794148932
 8tb_piso8.v
 Ftb_piso8.v
 !i122 1
 L0 3 67
-R3
-R4
+R5
+R6
 r1
 !s85 0
 31
-R5
-Z9 !s107 tb_piso8.v|piso8.v|
-R6
+!s108 1794149046.000000
+!s107 tb_piso8.v|piso8.v|
+!s90 -reportprogress|300|piso8.v|tb_piso8.v|
 !i113 0
+R10
+R3
+vtb_spi_controller
+R4
+R2
+!i10b 1
+!s100 m]kfV8@TA]R`bUk;Zh9<O1
+I1[d`jhz:2S=1ZOUeV[eUf2
+R1
+w1794173587
+8tb_spi_controller.v
+Ftb_spi_controller.v
+!i122 2
+L0 3 231
+R5
+R6
+r1
+!s85 0
+31
 R7
 R8
+R9
+!i113 0
+R10
+R3

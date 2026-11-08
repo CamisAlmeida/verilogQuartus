@@ -8,10 +8,12 @@ vmap work rtl_work
 vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/piso8.v}
 vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/sipo8.v}
 vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/spi_peripheral.v}
+vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/spi_controller.v}
+vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/spi_system.v}
 
-vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v}
+vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/tb_spi_system.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_spi_peripheral
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_spi_system
 
 add wave *
 view structure
