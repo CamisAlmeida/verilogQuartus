@@ -26,58 +26,67 @@
 # 
 # vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/piso8.v}
 # Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 11:48:03 on Nov 08,2026
+# Start time: 15:57:28 on Nov 08,2026
 # vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/piso8.v 
 # ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
 # -- Compiling module piso8
 # 
 # Top level modules:
 # 	piso8
-# End time: 11:48:03 on Nov 08,2026, Elapsed time: 0:00:00
+# End time: 15:57:28 on Nov 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/tb_piso8.v}
+# vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/sipo8.v}
 # Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 11:48:03 on Nov 08,2026
-# vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/tb_piso8.v 
+# Start time: 15:57:28 on Nov 08,2026
+# vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/sipo8.v 
 # ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
-# -- Compiling module tb_piso8
+# -- Compiling module sipo8
 # 
 # Top level modules:
-# 	tb_piso8
-# End time: 11:48:03 on Nov 08,2026, Elapsed time: 0:00:00
+# 	sipo8
+# End time: 15:57:28 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/spi_peripheral.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:57:28 on Nov 08,2026
+# vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/spi_peripheral.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module spi_peripheral
+# 
+# Top level modules:
+# 	spi_peripheral
+# End time: 15:57:28 on Nov 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_piso8
+# vlog  -work work +incdir+/home/camis/Documentos/verilogQuartus/SPI {/home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 15:57:28 on Nov 08,2026
+# vlog -reportprogress 300 -work work "+incdir+/home/camis/Documentos/verilogQuartus/SPI" /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module tb_spi_peripheral
+# 
+# Top level modules:
+# 	tb_spi_peripheral
+# End time: 15:57:28 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_spi_peripheral
 # ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_piso8 
-# Start time: 11:48:03 on Nov 08,2026
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_spi_peripheral 
+# Start time: 15:57:28 on Nov 08,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.tb_piso8(fast)
-# Loading work.piso8(fast)
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# OK   bit 7 = 1
-# OK   bit 6 = 0
-# OK   bit 5 = 1
-# OK   bit 4 = 0
-# OK   bit 3 = 0
-# OK   bit 2 = 1
-# OK   bit 1 = 0
-# OK   bit 0 = 1
-# Mantido: serial_out = 1 (esperado 1, resetou 10000000)
-# ** Note: $stop    : /home/camis/Documentos/verilogQuartus/SPI/tb_piso8.v(71)
-#    Time: 130 ns  Iteration: 1  Instance: /tb_piso8
-# Break in Module tb_piso8 at /home/camis/Documentos/verilogQuartus/SPI/tb_piso8.v line 71
-# 
-# stdin: <EOF>
-# Causality operation skipped due to absence of debug database file
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/camis/Documentos/verilogQuartus/SPI/simulation/questa/wave_piso8.do
+# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'rst_n' not found in module 'spi_peripheral' (2nd connection).
+# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'mosi' not found in module 'spi_peripheral' (5th connection).
+# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'miso' not found in module 'spi_peripheral' (6th connection).
+# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'data_out' not found in module 'spi_peripheral' (7th connection).
+# ** Error (suppressible): /home/camis/Documentos/verilogQuartus/SPI/tb_spi_peripheral.v(18): (vopt-2912) Port 'data_in' not found in module 'spi_peripheral' (8th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=5, Warnings=1.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./SPI_run_msim_rtl_verilog.do PAUSED at line 14
+# End time: 15:58:06 on Nov 08,2026, Elapsed time: 0:00:38
+# Errors: 5, Warnings: 1

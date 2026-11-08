@@ -1,0 +1,39 @@
+module sipo8 (
+input wire clk,
+input wire clr_n,
+input wire sample,
+input wire last_bit,
+input wire serial_in,
+output reg [7:0] parallel_out,
+output reg valid
+); 
+
+reg [7:0] shift_reg = 8'b0;
+	
+	always @(posedge clk or negedge clr_n) begin
+		
+		if(clr_n == 0) begin
+			shift_reg <= 8'b0;
+			parallel_out <= 8'b0;
+			valid <= 0;
+		end
+		else begin
+			valid <= 1'b0;
+			if (sample == 1) begin
+				shift_reg <= {shift_reg[6:0], serial_in};
+				if (last_bit) begin
+					parallel_out <= {shift_reg[6:0], serial_in};
+					valid <= 1'b1;
+				end
+			end
+		end
+	end
+
+endmodule
+
+/*
+Questão 2. Qual a vantagem de utilizar um registrador de saída separado do registrador interno de deslocamento?
+A vantagem e preservar a saida. Se o registrador de saida (parallel_out) fosse o mesmo registrador de deslocamento (shift_reg) ele iria ter seu valor atualizado a cada novo bit recebido, porem fiacaria com palavras invalidas, que nao estao completas ainda, entao quem estiver lendo o registrador nao esta coletando um dados valido. 
+com o registrador de saida separado ele so e atualizado quando toda a palavra estiver completa, enquando ele tem uma palavra valida outra palavra esta sendo montada. 
+Dess forma nao tem o risco de ter uma palvra incompleta na saida.
+*/

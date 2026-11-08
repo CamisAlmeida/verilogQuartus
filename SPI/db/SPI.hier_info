@@ -1,4 +1,38 @@
-|piso8
+|spi_peripheral
+clk => clk.IN2
+clr_n => clr_n.IN2
+parallel_load => comb.IN0
+parallel_in[0] => parallel_in[0].IN1
+parallel_in[1] => parallel_in[1].IN1
+parallel_in[2] => parallel_in[2].IN1
+parallel_in[3] => parallel_in[3].IN1
+parallel_in[4] => parallel_in[4].IN1
+parallel_in[5] => parallel_in[5].IN1
+parallel_in[6] => parallel_in[6].IN1
+parallel_in[7] => parallel_in[7].IN1
+parallel_out[0] << sipo8:u_sipo.parallel_out
+parallel_out[1] << sipo8:u_sipo.parallel_out
+parallel_out[2] << sipo8:u_sipo.parallel_out
+parallel_out[3] << sipo8:u_sipo.parallel_out
+parallel_out[4] << sipo8:u_sipo.parallel_out
+parallel_out[5] << sipo8:u_sipo.parallel_out
+parallel_out[6] << sipo8:u_sipo.parallel_out
+parallel_out[7] << sipo8:u_sipo.parallel_out
+rx_valid << sipo8:u_sipo.valid
+sclk => sclk_rise.IN1
+sclk => sclk_d.DATAIN
+sclk => sclk_fall.IN1
+cs_n => bit_cnt.OUTPUTSELECT
+cs_n => bit_cnt.OUTPUTSELECT
+cs_n => bit_cnt.OUTPUTSELECT
+cs_n => comb.IN1
+cs_n => comb.IN1
+cs_n => comb.IN1
+copi => copi.IN1
+cipo << piso8:u_piso.serial_out
+
+
+|spi_peripheral|piso8:u_piso
 clk => shift_reg[0].CLK
 clk => shift_reg[1].CLK
 clk => shift_reg[2].CLK
@@ -39,6 +73,77 @@ parallel_in[4] => shift_reg.DATAB
 parallel_in[5] => shift_reg.DATAB
 parallel_in[6] => shift_reg.DATAB
 parallel_in[7] => shift_reg.DATAB
-serial_out << shift_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+serial_out <= shift_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|spi_peripheral|sipo8:u_sipo
+clk => valid~reg0.CLK
+clk => parallel_out[0]~reg0.CLK
+clk => parallel_out[1]~reg0.CLK
+clk => parallel_out[2]~reg0.CLK
+clk => parallel_out[3]~reg0.CLK
+clk => parallel_out[4]~reg0.CLK
+clk => parallel_out[5]~reg0.CLK
+clk => parallel_out[6]~reg0.CLK
+clk => parallel_out[7]~reg0.CLK
+clk => shift_reg[0].CLK
+clk => shift_reg[1].CLK
+clk => shift_reg[2].CLK
+clk => shift_reg[3].CLK
+clk => shift_reg[4].CLK
+clk => shift_reg[5].CLK
+clk => shift_reg[6].CLK
+clr_n => valid~reg0.ACLR
+clr_n => parallel_out[0]~reg0.ACLR
+clr_n => parallel_out[1]~reg0.ACLR
+clr_n => parallel_out[2]~reg0.ACLR
+clr_n => parallel_out[3]~reg0.ACLR
+clr_n => parallel_out[4]~reg0.ACLR
+clr_n => parallel_out[5]~reg0.ACLR
+clr_n => parallel_out[6]~reg0.ACLR
+clr_n => parallel_out[7]~reg0.ACLR
+clr_n => shift_reg[0].ACLR
+clr_n => shift_reg[1].ACLR
+clr_n => shift_reg[2].ACLR
+clr_n => shift_reg[3].ACLR
+clr_n => shift_reg[4].ACLR
+clr_n => shift_reg[5].ACLR
+clr_n => shift_reg[6].ACLR
+sample => valid.OUTPUTSELECT
+sample => shift_reg[6].ENA
+sample => shift_reg[5].ENA
+sample => shift_reg[4].ENA
+sample => shift_reg[3].ENA
+sample => shift_reg[2].ENA
+sample => shift_reg[1].ENA
+sample => shift_reg[0].ENA
+sample => parallel_out[7]~reg0.ENA
+sample => parallel_out[6]~reg0.ENA
+sample => parallel_out[5]~reg0.ENA
+sample => parallel_out[4]~reg0.ENA
+sample => parallel_out[3]~reg0.ENA
+sample => parallel_out[2]~reg0.ENA
+sample => parallel_out[1]~reg0.ENA
+sample => parallel_out[0]~reg0.ENA
+last_bit => parallel_out.OUTPUTSELECT
+last_bit => parallel_out.OUTPUTSELECT
+last_bit => parallel_out.OUTPUTSELECT
+last_bit => parallel_out.OUTPUTSELECT
+last_bit => parallel_out.OUTPUTSELECT
+last_bit => parallel_out.OUTPUTSELECT
+last_bit => parallel_out.OUTPUTSELECT
+last_bit => parallel_out.OUTPUTSELECT
+last_bit => valid.DATAB
+serial_in => parallel_out.DATAB
+serial_in => shift_reg[0].DATAIN
+parallel_out[0] <= parallel_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+parallel_out[1] <= parallel_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+parallel_out[2] <= parallel_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+parallel_out[3] <= parallel_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+parallel_out[4] <= parallel_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+parallel_out[5] <= parallel_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+parallel_out[6] <= parallel_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+parallel_out[7] <= parallel_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+valid <= valid~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

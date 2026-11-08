@@ -1,0 +1,15 @@
+module spi_peripheral (
+input wire clk,
+input wire clr_n,
+input wire parallel_load,
+input wire [7:0] parallel_in,
+output wire [7:0] parallel_out,
+output wire rx_valid,
+input wire sclk,
+input wire cs_n,
+input wire copi,
+output wire cipo
+);
+
+
+endmodule

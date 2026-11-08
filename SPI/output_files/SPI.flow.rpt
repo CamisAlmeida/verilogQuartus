@@ -1,5 +1,5 @@
 Flow report for SPI
-Sun Nov  8 11:47:52 2026
+Sun Nov  8 15:57:02 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -38,24 +38,29 @@ on the Quartus Prime software download page.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+-----------------------------+-------------------------------------------------+
-; Flow Status                 ; Successful - Sun Nov  8 11:47:52 2026           ;
-; Quartus Prime Version       ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
-; Revision Name               ; SPI                                             ;
-; Top-level Entity Name       ; piso8                                           ;
-; Family                      ; Cyclone V                                       ;
-; Device                      ; 5CGXFC7C7F23C8                                  ;
-; Timing Models               ; Final                                           ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
-; Total registers             ; N/A until Partition Merge                       ;
-; Total pins                  ; N/A until Partition Merge                       ;
-; Total virtual pins          ; N/A until Partition Merge                       ;
-; Total block memory bits     ; N/A until Partition Merge                       ;
-; Total PLLs                  ; N/A until Partition Merge                       ;
-; Total DLLs                  ; N/A until Partition Merge                       ;
-+-----------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Sun Nov  8 15:57:02 2026           ;
+; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
+; Revision Name                   ; SPI                                             ;
+; Top-level Entity Name           ; spi_peripheral                                  ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CGXFC7C7F23C8                                  ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 14 / 56,480 ( < 1 % )                           ;
+; Total registers                 ; 28                                              ;
+; Total pins                      ; 24 / 268 ( 9 % )                                ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                           ;
+; Total DSP Blocks                ; 0 / 156 ( 0 % )                                 ;
+; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                                   ;
+; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                                   ;
+; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                                   ;
+; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                                   ;
+; Total PLLs                      ; 0 / 13 ( 0 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,66 +68,86 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/08/2026 11:47:47 ;
+; Start date & time ; 11/08/2026 15:56:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SPI                 ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 962697769308.179414926710901           ; --            ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; dut                                    ; --            ; --          ; tb_piso8                          ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_piso8                               ; --            ; --          ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; Questa Altera FPGA (Verilog)           ; <None>        ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; tb_piso8.v                             ; --            ; --          ; tb_piso8                          ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_piso8                               ; --            ; --          ; tb_piso8                          ;
-; EDA_TEST_BENCH_NAME                  ; tb_piso8                               ; --            ; --          ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; piso8       ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; piso8       ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; piso8       ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                     ; piso8                                  ; SPI           ; --          ; --                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                   ;
++--------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 962697769308.179416417521033           ; --            ; --             ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; dut                                    ; --            ; --             ; tb_piso8                          ;
+; EDA_DESIGN_INSTANCE_NAME             ; dut                                    ; --            ; --             ; tb_spi_peripheral                 ;
+; EDA_DESIGN_INSTANCE_NAME             ; dut                                    ; --            ; --             ; tb_sipo8                          ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_spi_peripheral                      ; --            ; --             ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --             ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; Questa Altera FPGA (Verilog)           ; <None>        ; --             ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; tb_piso8.v                             ; --            ; --             ; tb_piso8                          ;
+; EDA_TEST_BENCH_FILE                  ; tb_spi_peripheral.v                    ; --            ; --             ; tb_spi_peripheral                 ;
+; EDA_TEST_BENCH_FILE                  ; tb_sipo8.v                             ; --            ; --             ; tb_sipo8                          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_piso8                               ; --            ; --             ; tb_piso8                          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_spi_peripheral                      ; --            ; --             ; tb_spi_peripheral                 ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_sipo8                               ; --            ; --             ; tb_sipo8                          ;
+; EDA_TEST_BENCH_NAME                  ; tb_piso8                               ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; tb_sipo8                               ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; tb_spi_peripheral                      ; --            ; --             ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --             ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --             ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --             ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; spi_peripheral ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; spi_peripheral ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; spi_peripheral ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --             ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --             ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --             ; --                                ;
+; TOP_LEVEL_ENTITY                     ; spi_peripheral                         ; SPI           ; --             ; --                                ;
++--------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:05     ; 1.0                     ; 729 MB              ; 00:00:12                           ;
-; Total                  ; 00:00:05     ; --                      ; --                  ; 00:00:12                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 468 MB              ; 00:00:13                           ;
+; Fitter               ; 00:00:26     ; 1.0                     ; 1910 MB             ; 00:00:43                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 525 MB              ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 879 MB              ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 683 MB              ; 00:00:01                           ;
+; Total                ; 00:00:43     ; --                      ; --                  ; 00:01:07                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+------------------------+------------------+---------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name ; OS Version ; Processor type ;
-+------------------------+------------------+---------+------------+----------------+
-; Analysis & Elaboration ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
-+------------------------+------------------+---------+------------+----------------+
++---------------------------------------------------------------------------------+
+; Flow OS Summary                                                                 ;
++----------------------+------------------+---------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name ; OS Version ; Processor type ;
++----------------------+------------------+---------+------------+----------------+
+; Analysis & Synthesis ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
+; Fitter               ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
+; Assembler            ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
+; Timing Analyzer      ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
+; EDA Netlist Writer   ; pop-os           ; Pop!_OS ; 24         ; x86_64         ;
++----------------------+------------------+---------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off SPI -c SPI --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off SPI -c SPI
+quartus_fit --read_settings_files=off --write_settings_files=off SPI -c SPI
+quartus_asm --read_settings_files=off --write_settings_files=off SPI -c SPI
+quartus_sta SPI -c SPI
+quartus_eda --read_settings_files=off --write_settings_files=off SPI -c SPI
 
 
 
